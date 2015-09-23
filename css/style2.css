@@ -1,0 +1,6 @@
+div.menu,div.items,div.ss{color:#444;}
+div.item{background:rgba(255,255,255,.7);border:solid 1px rgba(255,255,255,.1);color:#999;}
+div.active{background: rgba(239,5,5,.4);color:#333;}
+div.ignore{background: none;border:1px solid #999;color:#999;}
+div.active.ignore{border:1px solid #999;background: rgb(239,5,5,.8);color:#333}
+div.top{color:#fff;}

@@ -1,0 +1,54 @@
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>公司年终抽奖专用程序</title>
+	<link href="./css/style.css" type="text/css" rel="stylesheet" media="screen, projection">
+	<link href="./css/style1.css" type="text/css" rel="stylesheet" media="screen, projection">
+	<link href="./css/ui-dialog.css" type="text/css" rel="stylesheet" media="screen, projection">
+</head>
+
+<body scroll="no">
+<div class="readme hide">
+<p>▪ 按键盘空格键或者字母A可进行抽取,隐藏菜单请按ESC。</p>
+<p>▪ ESC菜单中高级设置可以设置参与人数，格子大小，重置抽奖数据等信息。</p>
+<p>▪ 点击已经中奖格子并输入点击的格子编号可取消该格子中奖状态，并清除中奖信息。</p>
+<p>▪ 中奖信息保存在本机上，如清理缓存活更换机器则记录将消失。</p>
+<p>▪ 请使用Chrome浏览器浏览，在投影仪上展示，请进入浏览器的全屏模式浏览。</p>
+</div>
+<div id="bodybg">
+<img src="./images/bodybg1.jpg" class="stretch"/>
+</div>
+<div class="model hide">
+	<p><b>标题：</b><input type="text" id="title" class="ui-dialog-autofocus" value="" placeholder="输入标题，可以为空。"/></p>
+    <p><b>人数：</b><input type="text" id="personCount" class="ui-dialog-autofocus" value="" placeholder="输入人数，请输入数字。"/></p>
+	<p><b>方格宽：</b><input type="text" id="itemk"></p>
+    <p><b>方格高：</b><input type="text" id="itemg"></p>
+	<p class="line"><label><input type="radio" name="ms" style="width:15px;" checked value="50">眼花缭乱模式</label>
+    <label><input type="radio" name="ms" style="width:15px;" value="300">惊心动魄模式</label></p>
+	<p><label>蓝色经典<input type="radio" name="pf" style="width:15px;" checked value="1"></label>
+    <label>清新典雅<input type="radio" name="pf" style="width:15px;" value="2"></label></p>
+    <p class="line"><label><input type="checkbox" id="reset" value="1"/>重置已产生的抽奖数据</label></p>
+</div>
+<div class="top">公司年终抽奖专用程序</div>
+<div class="items"></div>
+<div class="menu">
+	<div class="help">
+		按键盘空格键或者字母A可进行抽取,查看帮助请按F1,隐藏请按ESC。
+        <a href="javascript:;" class="config">高级设定</a>
+	</div>
+    <div class="ss">
+        <h2>中奖结果：</h2>
+        <ol></ol>
+    </div>
+</div>
+
+
+<audio id="runingmic" class="hide" loop><source src=".\music\runing.wav"></audio>
+<audio id="pausemic" class="hide"><source src=".\music\stop.mp3"></audio>
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/jquery.pulsate.min.js"></script>
+<script type="text/javascript" src="./js/dialog-plus-min.js"></script>
+<script type="text/javascript" src="./js/app.js"></script>
+
+</body>
+</html>
