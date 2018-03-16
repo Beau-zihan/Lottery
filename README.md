@@ -3,3 +3,5 @@
 
 ## 示例
 http://www.zi-han.net/case/lottery/
+
+http://www.baidu.com
